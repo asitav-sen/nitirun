@@ -11,9 +11,7 @@ library(lubridate)
 library(shinymanager)
 library(sever)
 library(tidyr)
-library(shinyLP)
 library(waiter)
-library(shinythemes)
 
 
 source("dataset.R")
@@ -82,6 +80,16 @@ server <- function(input, output,session) {
     })
     
     mod_macmoduleServer("machine",telemetry)
+    
+    observeEvent(input$goButton, {
+        showModal(modalDialog(
+            title = "",
+            tags$iframe(src="https://forms.office.com/Pages/ResponsePage.aspx?id=ztWTZjNsuEm25kLTabmj1WfuoMPnOcpKuUOXXJhIZK9UMTMwTTExUzA4UFMxV0tLMFc1UkxGSkpRRC4u", height=600, width=535),
+            easyClose = TRUE,
+            footer = "Click outside to close"
+        ))
+    })
+    
     waiter_hide()
     
     
