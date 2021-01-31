@@ -1,0 +1,12 @@
+name: nitirun
+title: nitirun
+username:
+account: asitav-sen
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3553373
+bundleId: 4162816
+url: https://asitav-sen.shinyapps.io/nitirun/
+when: 1612080060.15493
+asMultiple: FALSE
+asStatic: FALSE
