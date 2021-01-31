@@ -639,13 +639,6 @@
       "Repository": "CRAN",
       "Hash": "ee4ed72d7a5047d9e73cf922ad66e9c9"
     },
-    "shinyLP": {
-      "Package": "shinyLP",
-      "Version": "1.1.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "0ec363896d7bf1af7c60fa5813e43630"
-    },
     "shinycssloaders": {
       "Package": "shinycssloaders",
       "Version": "1.0.0",
@@ -678,13 +671,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "747fd4d788f45cb1d3d16aafcd702f57"
-    },
-    "shinythemes": {
-      "Package": "shinythemes",
-      "Version": "1.1.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "8f047210d7d68ea4860a3c0d8cced272"
     },
     "sourcetools": {
       "Package": "sourcetools",

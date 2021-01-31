@@ -1,21 +1,21 @@
 homepage<-
   fluidPage(
-    theme = shinytheme("cyborg"),
     fluidRow(
       box(
         status= "primary",
         width= 12,
-        height = "300px",
+        #height = "300px",
         h1("Predictive Maintenance Dashboard"),
         br(),
         br(),
-        h5("Replacement schedules defined by OEMs is not customized to your circustances. 
-                You may be spending a lot more than needed; either in replacements or in failures. Do you want to keep losing money in maintenance?"),
+        h4("Replacement schedules defined by OEMs is not customized to your circustances. What if you are losing opportunity to save?
+           Do you want to verify?"),
         fluidRow(
           column(
             width = 3,
             br(),
-            actionButton("goButton", "No, I don't want to lose money anymore", class = "btn-success", width = "100%")
+            br(),
+            actionButton("goButton", "Yes! I want to check if I can save more", class = "btn-success", width = "100%")
           ),
           column(
             width= 9
