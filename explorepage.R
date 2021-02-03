@@ -1,6 +1,8 @@
 mod_exploremodule<- function(id){
     ns<-NS(id)
     fluidPage(
+      tags$head(includeHTML("google.html")),
+      tags$head(includeHTML("hotjar.html")),
   fluidRow(
     shinydashboardPlus::box(
       width = 12,

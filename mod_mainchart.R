@@ -25,7 +25,17 @@ mod_mainchartServer<- function(id, df, title=""){
             xaxis = list(title = title, color = "white"),
             yaxis = list(title = "", color = "white"),
             plot_bgcolor = 'transparent',
-            paper_bgcolor = 'transparent'#,
+            paper_bgcolor = 'transparent',
+            # images = list(
+            #   list(source = "faviconwhite.png",
+            #        xref = "paper",
+            #        yref = "paper",
+            #        x = 0.9, y = 0.8, 
+            #        sizex = 0.3, sizey = 0.3,
+            #        opacity= 0.7,
+            #        xref = "paper", yref = "paper", 
+            #        xanchor = "left", yanchor = "bottom"
+            #   ))
             #dragmode = "select"
           ) %>% config(displayModeBar = FALSE)
       })

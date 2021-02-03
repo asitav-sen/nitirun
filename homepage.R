@@ -1,5 +1,7 @@
 homepage<-
   fluidPage(
+    tags$head(includeHTML("google.html")),
+    tags$head(includeHTML("hotjar.html")),
     fluidRow(
       box(
         status= "primary",

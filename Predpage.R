@@ -1,6 +1,8 @@
 mod_predmodule<- function(id){
     ns<-NS(id)
     fluidPage(
+      tags$head(includeHTML("google.html")),
+      tags$head(includeHTML("hotjar.html")),
   fluidRow(
     mod_info(ns("currentrep")), mod_info(ns("recommendedrep")), mod_info(ns("savings")), mod_info(ns("reduction"))
   ),

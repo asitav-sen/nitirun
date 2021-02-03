@@ -1,6 +1,8 @@
 mod_macmodule<- function(id){
   ns<-NS(id)
   fluidPage(
+    tags$head(includeHTML("google.html")),
+    tags$head(includeHTML("hotjar.html")),
     fluidRow(
       box(
         width = 12,

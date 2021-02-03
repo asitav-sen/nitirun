@@ -8,11 +8,10 @@ library(shinycssloaders)
 library(feather)
 library(DT)
 library(lubridate)
-library(shinymanager)
+#library(shinymanager)
 library(sever)
 library(tidyr)
 library(waiter)
-
 
 source("dataset.R")
 source("mod_info.R")
@@ -40,7 +39,8 @@ ui <-shinydashboardPlus::dashboardPage(
     title= "Niti-run",
     preloader = list(waiter = list(html = spin_1(), color = "#333e48"), duration = 10),
     header = shinydashboardPlus::dashboardHeader(title = tags$a(href='http://asitavsen.com',
-                                                                tags$img(src='faviconwhite.png'))),
+                                                                tags$img(src='faviconwhite.png'))
+                                                 ),
     sidebar = shinydashboardPlus::dashboardSidebar(minified = TRUE, collapsed = T,
                                                    admin.sidebar
                                                    ),
