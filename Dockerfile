@@ -20,9 +20,9 @@ RUN apt-get update && \
 
 # copy necessary files
 ## app folder
-COPY /nitirun ./app
+COPY /app ./nitirun
 ## renv.lock file
-COPY /nitirun/renv.lock ./renv.lock
+COPY /renv.lock ./renv.lock
 
 # install renv & restore packages
 RUN Rscript -e 'install.packages("renv")'
@@ -33,4 +33,4 @@ RUN Rscript -e 'renv::restore()'
 EXPOSE 3838
 
 # run app on container start
-CMD ["R", "-e", "shiny::runApp('/app', host = '0.0.0.0', port = 3838)"]
+CMD ["R", "-e", "shiny::runApp('/nitirun', host = '0.0.0.0', port = 3838)"]

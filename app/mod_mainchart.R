@@ -21,11 +21,11 @@ mod_mainchartServer<- function(id, df, title=""){
             source = id
           ) %>%
           layout(
-            #title= title,
+            title= title,
             xaxis = list(title = title, color = "white"),
             yaxis = list(title = "", color = "white"),
             plot_bgcolor = 'transparent',
-            paper_bgcolor = 'transparent',
+            paper_bgcolor = 'transparent'
             # images = list(
             #   list(source = "faviconwhite.png",
             #        xref = "paper",
